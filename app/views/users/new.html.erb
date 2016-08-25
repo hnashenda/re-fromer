@@ -15,7 +15,7 @@
 <br><br>
 <%= submit_tag "Submit" %>
 <% end %>
-
+<% if false %>
 
 <form action="/users" method="post" accept-charset="UTF-8">
 <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
@@ -27,3 +27,5 @@
 <input type="password" name="user[password]" id="password"><br><br>
 <input type="submit" value="Submit">
 </form>
+
+<% end %>
